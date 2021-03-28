@@ -6,18 +6,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!-- The navbar is not working with this version -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <!-- TODO: you can play around with further features by seeing this website: https://getbootstrap.com/docs/4.6 -->
+    
+    <!-- this doesn't work with the current bootstrap version -->
+    <!-- <nav class="navbar navbar-expand-sm bg-info navbar-inverse">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home</a>
+                    <a class="nav-item nav-link" href="#">About</a>
+                    <a class="nav-item nav-link" href="#">Training</a>
+                    <a class="nav-item nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav> -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+    <div class="jumbotron jumbotron-fluid bg-info text-white text-center" style="background: #aaa;">
+        <div class="container">
+            <h1 class="display-1">Welcome to the Dojo!</h1>
+            <p class="lead">A path for less enlightened...</p>
+        </div>
+    </div>
+
+
+    <div class="container text-muted">
+        <!-- cards -->
+        <div class="row">
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="img/mongo.png" alt="node" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Node.js Training</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="img/node.png" alt="node" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Node.js Training</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="img/webpack.png" alt="webpack" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Node.js Training</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="img/react.png" alt="react" class="card-img-top img-fluid">
+                    <div class="card-body">
+                        <h3 class="card-title">Node.js Training</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="display-4 text-center py-5 my-4">Meet the speakers</h2>
+        
+        <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+            <a href="#ninja" class="nav-link active" data-toggle="tab">The Net Ninja</a>
+            <a href="#wizard" class="nav-link" data-toggle="tab">The Web Wizard</a>
+            <a href="#captain" class="nav-link" data-toggle="tab">Captain Code</a>
+            <a href="#avenger" class="nav-link" data-toggle="tab">The Angular Avenger</a>
+        </nav>
+
+        <div class="tab-content py-5">
+            <div class="tab-pane active" id="ninja">
+                <h3>The Net Ninja</h3>
+                <p>Lorem ipsum,<span data-toggle="tooltip" title="this is a tooltip" class="text-info" data-placement="bottom"> dolor sit amet </span>consectetur adipisicing elit. Totam, ipsum magnam asperiores magni recusandae, alias doloremque aliquid quam ullam a laborum nulla blanditiis perferendis, odio quibusdam voluptate exercitationem non praesentium eius. Voluptas, totam? Velit aut molestias repellendus aperiam explicabo sunt excepturi cumque consequuntur et. Explicabo delectus accusamus amet magni ab iusto dolor error hic ullam molestiae impedit iste, magnam tempora corrupti assumenda fugit! Amet qui dolore temporibus. Excepturi accusamus, quas maiores tempora atque nostrum, dolores sapiente nemo iste ex officiis libero, officia consequuntur magni itaque deserunt! Quas, in. In fugiat tenetur quasi assumenda, dolorem aut ullam possimus nemo ut nihil sit ducimus qui autem, reiciendis ea nesciunt fuga molestias repellat, magnam enim repellendus. Aperiam quia placeat eveniet! Eum, quo vitae. Mollitia aliquam cumque maiores earum quaerat nisi aut dolores suscipit, magnam nemo iusto itaque nam cupiditate rerum illum eveniet ullam magni ratione dolorum? Suscipit dignissimos ipsam atque expedita facere veniam vitae voluptatem, ipsa facilis non id quis omnis excepturi nobis neque. Dicta provident minus eaque fugit vel sunt eveniet alias, autem error, quis vitae unde voluptas earum asperiores. Quas inventore deserunt quibusdam quasi saepe possimus harum sed nemo repellat ipsum expedita, provident, qui commodi. Dolorem cum quisquam quo laboriosam veritatis!</p>
+            </div>
+            <div class="tab-pane" id="wizard">
+                <h3>The Web Wizard</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, ipsum magnam asperiores magni recusandae, alias doloremque aliquid quam ullam a laborum nulla blanditiis perferendis, odio quibusdam voluptate exercitationem non praesentium eius. Voluptas, totam? Velit aut molestias repellendus aperiam explicabo sunt excepturi cumque consequuntur et. Explicabo delectus accusamus amet magni ab iusto dolor error hic ullam molestiae impedit iste, magnam tempora corrupti assumenda fugit! Amet qui dolore temporibus. Excepturi accusamus, quas maiores tempora atque nostrum, dolores sapiente nemo iste ex officiis libero, officia consequuntur magni itaque deserunt! Quas, in. In fugiat tenetur quasi assumenda, dolorem aut ullam possimus nemo ut nihil sit ducimus qui autem, reiciendis ea nesciunt fuga molestias repellat, magnam enim repellendus. Aperiam quia placeat eveniet! Eum, quo vitae. Mollitia aliquam cumque maiores earum quaerat nisi aut dolores suscipit, magnam nemo iusto itaque nam cupiditate rerum illum eveniet ullam magni ratione dolorum? Suscipit dignissimos ipsam atque expedita facere veniam vitae voluptatem, ipsa facilis non id quis omnis excepturi nobis neque. Dicta provident minus eaque fugit vel sunt eveniet alias, autem error, quis vitae unde voluptas earum asperiores. Quas inventore deserunt quibusdam quasi saepe possimus harum sed nemo repellat ipsum expedita, provident, qui commodi. Dolorem cum quisquam quo laboriosam veritatis!</p>
+            </div>
+            <div class="tab-pane" id="captain">
+                <h3>Captain Code</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, ipsum magnam asperiores magni recusandae, alias doloremque aliquid quam ullam a laborum nulla blanditiis perferendis, odio quibusdam voluptate exercitationem non praesentium eius. Voluptas, totam? Velit aut molestias repellendus aperiam explicabo sunt excepturi cumque consequuntur et. Explicabo delectus accusamus amet magni ab iusto dolor error hic ullam molestiae impedit iste, magnam tempora corrupti assumenda fugit! Amet qui dolore temporibus. Excepturi accusamus, quas maiores tempora atque nostrum, dolores sapiente nemo iste ex officiis libero, officia consequuntur magni itaque deserunt! Quas, in. In fugiat tenetur quasi assumenda, dolorem aut ullam possimus nemo ut nihil sit ducimus qui autem, reiciendis ea nesciunt fuga molestias repellat, magnam enim repellendus. Aperiam quia placeat eveniet! Eum, quo vitae. Mollitia aliquam cumque maiores earum quaerat nisi aut dolores suscipit, magnam nemo iusto itaque nam cupiditate rerum illum eveniet ullam magni ratione dolorum? Suscipit dignissimos ipsam atque expedita facere veniam vitae voluptatem, ipsa facilis non id quis omnis excepturi nobis neque. Dicta provident minus eaque fugit vel sunt eveniet alias, autem error, quis vitae unde voluptas earum asperiores. Quas inventore deserunt quibusdam quasi saepe possimus harum sed nemo repellat ipsum expedita, provident, qui commodi. Dolorem cum quisquam quo laboriosam veritatis!</p>
+            </div>
+            <div class="tab-pane" id="avenger">
+                <h3>Angular Avenger</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, ipsum magnam asperiores magni recusandae, alias doloremque aliquid quam ullam a laborum nulla blanditiis perferendis, odio quibusdam voluptate exercitationem non praesentium eius. Voluptas, totam? Velit aut molestias repellendus aperiam explicabo sunt excepturi cumque consequuntur et. Explicabo delectus accusamus amet magni ab iusto dolor error hic ullam molestiae impedit iste, magnam tempora corrupti assumenda fugit! Amet qui dolore temporibus. Excepturi accusamus, quas maiores tempora atque nostrum, dolores sapiente nemo iste ex officiis libero, officia consequuntur magni itaque deserunt! Quas, in. In fugiat tenetur quasi assumenda, dolorem aut ullam possimus nemo ut nihil sit ducimus qui autem, reiciendis ea nesciunt fuga molestias repellat, magnam enim repellendus. Aperiam quia placeat eveniet! Eum, quo vitae. Mollitia aliquam cumque maiores earum quaerat nisi aut dolores suscipit, magnam nemo iusto itaque nam cupiditate rerum illum eveniet ullam magni ratione dolorum? Suscipit dignissimos ipsam atque expedita facere veniam vitae voluptatem, ipsa facilis non id quis omnis excepturi nobis neque. Dicta provident minus eaque fugit vel sunt eveniet alias, autem error, quis vitae unde voluptas earum asperiores. Quas inventore deserunt quibusdam quasi saepe possimus harum sed nemo repellat ipsum expedita, provident, qui commodi. Dolorem cum quisquam quo laboriosam veritatis!</p>
+            </div>
+        </div>
+
+    </div>
+
 
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- add tether -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
+
+    <!-- enable tether with jquery -->
+    <script>    
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
